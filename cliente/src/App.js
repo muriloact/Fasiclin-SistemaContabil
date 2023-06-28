@@ -86,7 +86,7 @@ function App() {
         </form>
       </div>
         <br/>
-        <div>
+        <div className="DivPlanoCadastrados">
           {typeof listPlanoContas !=='undefined' && listPlanoContas.map((value)=>{
             return(<PlanosCadastrados key={value.idCo_PlanoContas}
             listCard={listPlanoContas}

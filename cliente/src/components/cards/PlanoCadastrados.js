@@ -8,6 +8,7 @@ export default function PlanosCadastrados(props){
     return (
         <>
             <div className="planosCadastrados"> 
+                <input type="checkbox"/>
                 <label className="id-planos">
                     {props.idCo_PlanoContas} - 
                 </label>

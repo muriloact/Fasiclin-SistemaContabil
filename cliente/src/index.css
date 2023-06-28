@@ -1,6 +1,5 @@
 
 body {
-  /* margin: 2em; */
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -12,14 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-.DivPlanosCadastrado{
-    overflow: scroll;
-    width: 600px;
+.DivPlanoCadastrados{
+  display: grid ;
+  overflow: auto;
+  width: 600px;
 }
 .DivCadastroPlano{
     width: 600px;
 }
-.DivPlanosCadastrado,.DivCadastroPlano{
+.DivPlanoCadastrados,.DivCadastroPlano{
+  border-radius: 5px;
   display: inline-block;
   height: auto;
   margin: 2px;
@@ -32,12 +33,15 @@ code {
   border: 2px solid;
 }
 label{
+  margin: 4px;
   text-align:left ;
   font-family: Arial, Helvetica, sans-serif;
   font-size: large;
 }
 input{
   display: inline;
+  margin-left: 4px;
+  border-radius: 10px;
 }
 nav{
   align-items: center;
@@ -59,4 +63,8 @@ a{
 link{
   height: 200px;
   width: 200px;
+}
+.CadastrarPlano{
+  background-color: green;
+  border-radius: 10px;
 }

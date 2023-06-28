@@ -1,5 +1,7 @@
 
 .planosCadastrados{
+    align-items: center;
+    display:table ;
     text-align:left;
     width: 200px;
     border: 1px solid;
@@ -7,10 +9,15 @@
 }
 
 .vizualizar-plano{
-    margin: 2px;
-    
+    margin: 4px;
+    margin-left: 10px;
+    background-color: green;
+    border-radius: 10px;
 }
 
-button:hover{
+.vizualizar-plano:hover{
     background-color: chartreuse;
+}
+.id-planos,.descricao-planos{
+    text-align: center;
 }
