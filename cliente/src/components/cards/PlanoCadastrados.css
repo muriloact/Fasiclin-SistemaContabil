@@ -1,0 +1,16 @@
+
+.planosCadastrados{
+    text-align:left;
+    width: 200px;
+    border: 1px solid;
+    border-color: forestgreen;
+}
+
+.vizualizar-plano{
+    margin: 2px;
+    
+}
+
+button:hover{
+    background-color: chartreuse;
+}
