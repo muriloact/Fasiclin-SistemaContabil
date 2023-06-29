@@ -2,6 +2,8 @@ import React,{useState,useEffect} from  "react";
 import './App.css';
 import Axios from "axios";
 import PlanosCadastrados from "./components/cards/PlanoCadastrados.js";
+// import * as ReactDom from 'react-dom';
+
 
 function App() {
 
