@@ -17,9 +17,9 @@ function App() {
     }));
   }
 
-  const eventodeClique = () =>{
+  const EventoCadastroClick = () =>{
     Axios.post("http://localhost:3001/registrar",{
-      codigo: value.codigo,
+      codigo:value.codigo,
       categoria:value.categoria,
       precisao:value.precisao,
       descricao:value.descricao
@@ -33,6 +33,17 @@ function App() {
       setPlanoContas(response.data);
     });
   },[]);
+  
+  // const EventoSelecionar = ()=>{
+    
+  //   Axios.get('http://localhost:3001/getPlanosCadastrados',{
+  //     codigo: value.codigo,
+  //     categoria: value.categoria,
+  //     precisao: value.precisao,
+  //     descricao: value.descricao,
+  //   })
+  // };
+
 
   return (
     <div className="App">
@@ -81,9 +92,10 @@ function App() {
           />
           <br/>
           <button className='CadastrarPlano'
-          onClick={()=> eventodeClique()}
+          onClick={()=> EventoCadastroClick()}
           >Cadastrar Plano
           </button>
+          <button className="ExcluirCadastro">Excluir Cadastro</button>
           <br/>
         </form>
       </div>

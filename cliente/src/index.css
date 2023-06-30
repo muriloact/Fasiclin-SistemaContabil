@@ -13,8 +13,10 @@ code {
     monospace;
 }
 .DivPlanoCadastrados{
+  align-items: center;
+  text-align: center;
   display: grid ;
-  overflow: auto;
+  overflow: visible;
   width: 600px;
 }
 .DivCadastroPlano{
@@ -65,7 +67,7 @@ link{
   height: 200px;
   width: 200px;
 }
-.CadastrarPlano{
+.CadastrarPlano,.ExcluirCadastro{
   margin: 10px;
   background-color: green;
   border-radius: 10px;
