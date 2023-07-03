@@ -19,7 +19,7 @@ function App() {
 
   const EventoCadastroClick = () =>{
     Axios.post("http://localhost:3001/registrar",{
-      codigo:value.codigo,
+      codigo: value.codigo,
       categoria:value.categoria,
       precisao:value.precisao,
       descricao:value.descricao
@@ -34,17 +34,6 @@ function App() {
     });
   },[]);
   
-  // const EventoSelecionar = ()=>{
-    
-  //   Axios.get('http://localhost:3001/getPlanosCadastrados',{
-  //     codigo: value.codigo,
-  //     categoria: value.categoria,
-  //     precisao: value.precisao,
-  //     descricao: value.descricao,
-  //   })
-  // };
-
-
   return (
     <div className="App">
       <nav>
