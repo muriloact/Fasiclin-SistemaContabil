@@ -25,7 +25,7 @@ app.post('/registrar', (req, res) => {
         console.log(err);
     })
 })
-
+ 
 app.get('/getPlanosCadastrados', (req, res)=>{
     let SQL = 'SELECT * FROM concipecom_fasiclin.Co_PlanoContas';
 

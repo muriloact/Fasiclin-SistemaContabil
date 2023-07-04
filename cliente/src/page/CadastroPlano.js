@@ -1,7 +1,7 @@
 import React,{useState,useEffect} from  "react";
-import './App.css';
 import Axios from "axios";
-import PlanosCadastrados from "./components/cards/PlanoCadastrados.js";
+import PlanosCadastrados from "../components/cards/PlanoCadastrados";
+import Navbar from "../navbar";
 
 export default function CadastroPlanos(){
     const [value, setValues] = useState();
@@ -33,10 +33,7 @@ export default function CadastroPlanos(){
   
   return (
     <div className="App">
-      <nav>
-        <a href='./movimentocontabil'>Movimento Contabil</a>
-        <a href='./escriturafiscal'>Escritura Fiscal</a>
-      </nav>
+          <Navbar/>
         <br/>
       <div className='DivCadastroPlano'>
         <h1>Cadastro de Plano de Contas</h1>
