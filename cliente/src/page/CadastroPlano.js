@@ -90,7 +90,7 @@ export default function CadastroPlanos(){
             setListPlanosCadastrados={setPlanoContas}
             idCo_PlanoContas={value.idCo_PlanoContas}
             Descricao={value.Descricao}
-            ></PlanosCadastrados>)
+            />)
           })}
         </div>
         </div>
